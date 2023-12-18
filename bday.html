@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HC Birthday</title>
+    <link rel="icon" type="image/x-icon" href="images/webicon.png">
+    <style>
+        body{
+            background-color: #0d181e;
+            animation:bodyanimation 3s 1;
+        }
+        @keyframes bodyanimation{
+            from{opacity:0}
+            to{opcaity:1}
+        }
+        #home{
+            position:absolute;
+            width:30px;
+            top:7px;
+            left:10px;
+            z-index:1;
+        }
+        #home:hover{
+            filter: drop-shadow(0px 1px 1px #719F98);
+        }
+        #logo > img{  
+            width:250px;
+            position: absolute;
+            z-index: 1;
+            left:50%;
+            top:90px;
+            transform: translate(-50%,-50%);
+
+        }
+        form{
+            padding:20px;
+            border-radius: 25px;
+            background-color: #b4ebcab1;
+            position:relative;
+            top:200px;
+            width:500px;
+            input{
+                width:300px;
+                margin-bottom: 30px;
+                border:#719F98 3px solid;
+                border-radius: 25px;
+                background-color: #719F98;
+                color:#0d181e;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            input:hover{
+                border-color: #B4EBCA;
+            }
+            label{
+                color: #0d181e;
+                font-size: 20px;
+                font-family: cursive;
+            }
+            p{
+                color:#0d181e;
+                font-size: 20px;
+            }
+            #girl,#Boy{
+                width:50px;
+            }
+            button{
+                padding: 10px;
+                font-size: 20px;
+                color: #B4EBCA;
+                border:#B4EBCA 3px solid;
+                border-radius: 25px;
+                background-color: #0d181e;
+            }
+            button:hover{
+                filter:drop-shadow(3px 5px 5px #B4EBCA)
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="HanCook.html"><img src="images/house-solid.svg" id="home" alt="error"></a>
+    <div id="logo">
+        <img src="images/logo.png" alt="error">
+    </div>
+   <center>
+    
+
+        <form>
+            <h1>Party Party YEAHHHHH!!!!</h1>
+            <label for="relative">Relative's Name</label><br>
+            <input id="relative" type="text" required><br>
+            <label for="person">Birthday Star</label><br>
+            <input id="person" type="text" required><br>
+            <p>Gender</p>
+            <input type="radio" id="girl" value="Girl">
+            <label for="Girl">Girl</label>
+            <input type="radio" id="Boy" value="Boy">
+            <label for="Boy">Boy</label><br>
+            <label for="bdate">Birthday Date</label><br>
+            <input id="bdate" type="date" required><br>
+            <label for="guests">Number of Guests Attending</label><br>
+            <input id="guests" type="number" required><br>
+            <label for="number">Telephone Number</label><br>
+            <input id="number" type="tel" required><br>
+            <label for="email">Email</label><br>
+            <input id="email" type="email" required><br>
+            <label for="questions">Any questions</label><br>
+            <input id="questions" type="text"><br>
+            <button type="submit">Done</button>
+        </form>
+    </center>
+</body>
+</html>

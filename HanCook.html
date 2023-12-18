@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="images/webicon.png">
+    <title>Han Cook</title>
+    <link  rel="stylesheet" href="HanCook.css">
+</head>
+<body>
+    <div id="logo">
+    <img src="images/logo.png" alt="error">
+    </div>
+    <div class="body1">
+        <div id="sidenav" >
+            <img id="openNav" onclick="navClicked()" src="images/dashes.png" alt="error">
+            <div id="elements">
+                <a href="#home">Home</a>
+                <a href="#Menu">Menu</a>
+                <a href="#Order">Order</a>
+                <a href="#bday">Book Your B-Day</a>
+                <a href="#contact">Contact</a>
+            </div> 
+        </div>
+        <div id="body2">
+            <h1 id="home">Top Selling Dishes</h1>
+            <center>
+            <a href="#kimchistew"><div class="card">
+                <img class="image" src="images/kimchi stew.jpeg" alt="Kimchi Stew">
+                <h3>Kimchi Stew</h3>
+            </div></a>
+            <a href="#bibimpap"><div class="card">
+                <img class="image" src="images/bibimpap.jpeg" alt="Bibimbap">
+                <h3>Bibimbap</h3>
+            </div></a>
+            <a href="#galbi"><div class="card">
+                <img class="image" src="images/galbi.jpeg" alt="Galbi">
+                <h3>Galbi</h3>
+            </div></a>
+            <a href="#Chicken"><div class="card">
+                <img class="image" src="images/chicken.jpeg" alt="Korean Sweet and Sour Chicken">
+                <h3>Korean Sweet and Sour Chicken</h3>
+            </div></a>
+            <a href="#tofu"><div class="card">
+                <img class="image" src="images/tofu.jpeg" alt="Korean Sweet and Sour Deep Fried Tofu">
+                <h3>Korean Sweet and Sour Deep Fried Tofu</h3>
+            </div></a>
+            <a href="#ricecake"><div class="card">
+                <img class="image" src="images/ricecake.jpeg" alt="Cheesy Spicy Rice Cake">
+                <h3>Cheesy Spicy Rice Cake</h3>
+            </div></a></center>
+            <br>
+            <h1 id="Menu">Our Menu</h1>
+            <center><h2>Appetizers</h2>
+            <br>
+            
+            <table>
+                <tr>
+                    <td class="itemname">Kimbap</td>
+                    <td class="itemprice">7.95$</td>
+                </tr>
+                <tr>
+                    <td class="itemname">Combo Spicy Rice Cake</td>
+                    <td class="itemprice">10.95$</td>
+                </tr>
+                <tr>
+                    <td class="itemname" id="ricecake">Cheesy Spicy Rice Cake</td>
+                    <td class="itemprice">8.95$</td>
+                </tr>
+                <tr>
+                    <td class="itemname">Seafood Pancake</td>
+                    <td class="itemprice">8.95$</td>
+                </tr>
+                <tr>
+                    <td class="itemname">Spicy Chicken Feet</td>
+                    <td class="itemprice">9.95$</td>
+                </tr>
+                <tr>
+                    <td class="itemname">Shrimp Tempura Kimbap</td>
+                    <td class="itemprice">10.95$</td>
+                </tr>
+                <tr>
+                    <td class="itemname">Spring Roll (2)</td>
+                    <td class="itemprice">2.95$</td>
+                </tr>
+            </table>
+            <br>
+            </center>
+            <center><h2>Soups and Stews</h2>
+                <br>
+                
+                <table>
+                    <tr>
+                        <td class="itemname" id="kimchistew">Kimchi Stew</td>
+                        <td class="itemprice">9.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Soft Tofu Stew</td>
+                        <td class="itemprice">9.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Beef Broth Soup</td>
+                        <td class="itemprice">12.95$</td>
+                    </tr>
+                </table>
+                <br>
+            </center>
+            <center><h2>Rice and Noodles</h2>
+                <br>
+                <table>
+                    <tr>
+                        <td class="itemname" id="bibimpap">Bibimbap</td>
+                        <td class="itemprice">9.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Fried Rice</td>
+                        <td class="itemprice">10.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Stir-Fried Seafood Noodle</td>
+                        <td class="itemprice">13.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Seafood Udon</td>
+                        <td class="itemprice">12.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Kimchi Fried Rice with Ham</td>
+                        <td class="itemprice">10.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Seafood Noodle Soup</td>
+                        <td class="itemprice">12.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Stonebowl Bibimpap</td>
+                        <td class="itemprice">11.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Udon</td>
+                        <td class="itemprice">9.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Extra Rice</td>
+                        <td class="itemprice">1.95$</td>
+                    </tr>
+                </table>
+                <br>
+            </center>
+            <center><h2>Entree</h2>
+                <br>
+                <table>
+                    <tr>
+                        <td class="itemname" id="galbi">Galbi</td>
+                        <td class="itemprice">17.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Grilled Pork Belly</td>
+                        <td class="itemprice">15.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Bul Gogi</td>
+                        <td class="itemprice">13.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Pork Belly and Kimchi Stir-Fry</td>
+                        <td class="itemprice">12.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Squid and Pork Stir-Fry</td>
+                        <td class="itemprice">15.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Grilled Mackerel</td>
+                        <td class="itemprice">13.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Chicken and Vegetable Stir-Fry</td>
+                        <td class="itemprice">12.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Pork Stir-Fry</td>
+                        <td class="itemprice">12.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname" id="Chicken">Korean Sweet and Sour Chicken</td>
+                        <td class="itemprice">11.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Baby Octopus and Vegetable Stir-Fry</td>
+                        <td class="itemprice">15.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname" id="tofu">Korean Sweet and Sour Deep Fried Tofu</td>
+                        <td class="itemprice">10.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Spicy Squid Vegetable Stir-Fry</td>
+                        <td class="itemprice">15.95$</td>
+                    </tr>
+                </table>
+                <br>
+            </center>
+            <center><h2>Hot Pots</h2>
+                <br>
+                
+                <table>
+                    <tr>
+                        <td class="itemname">Military Hot Pot</td>
+                        <td class="itemprice">25.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Beef Tripe and Intestine Hot Pot</td>
+                        <td class="itemprice">29.95$</td>
+                    </tr>
+                </table>
+                <br>
+            </center>
+            <center><h2>Drinks</h2>
+                <br>
+                
+                <table>
+                    <tr>
+                        <td class="itemname">Pepsi</td>
+                        <td class="itemprice" rowspan="3">1.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Miranda</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Seven Up</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Taro Milk Tea</td>
+                        <td class="itemprice">3.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Green Tea Milk Tea</td>
+                        <td class="itemprice">3.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Almond Milk Tea</td>
+                        <td class="itemprice">3.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Golden Milk Tea</td>
+                        <td class="itemprice">3.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Fresh Tropical Fruits Tea</td>
+                        <td class="itemprice">6.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Mango Fruit Tea</td>
+                        <td class="itemprice">3.75$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Lychee Fruit Tea</td>
+                        <td class="itemprice">3.75$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Passion Fruit Tea</td>
+                        <td class="itemprice">3.75$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Winter Melon Tea</td>
+                        <td class="itemprice">3.75$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Strawberry Fruit Tea</td>
+                        <td class="itemprice">3.75$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Honey Black Tea</td>
+                        <td class="itemprice">3.75$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Honey Green Tea</td>
+                        <td class="itemprice">3.75$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Pomelo Tea</td>
+                        <td class="itemprice">3.75$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Iced Sea Salt Coffee</td>
+                        <td class="itemprice">3.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Iced Sea Salt Black Tea</td>
+                        <td class="itemprice">3.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Mango Fruit Slush</td>
+                        <td class="itemprice">4.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Passion Furit Slush</td>
+                        <td class="itemprice">4.95$</td>
+                    </tr>
+                    <tr>
+                        <td class="itemname">Strawberry Fruit Slush</td>
+                        <td class="itemprice">4.95$</td>
+                    </tr>
+                </table>
+                <br>
+            </center>
+            <center><a href="orderpage.html" target="_blank"><button><h2 id="Order">Order Now</h2></button></a></center>
+            <br>
+            <br>
+            <center>
+            <div id="bday">
+                <img src="images/bdaybg.png" alt="error">
+                <h1>PARTY TIME</h1>
+                <p>It's time to throw a party at HanCook!! Whether it's your birthday, your relative's, or your friend's... Don't just let it pass like that!! Enjoy It and Book right now!!</p>
+                <a href="bday.html" target="_self"><button id="bdaybutton"><h3> Book Your Party</h3></button></a>
+                <br>
+            </div></center>
+        </div>
+        <br>
+            <footer>
+                <h4 id="contact">Contact Us</h4>
+                <img src="images/whatsapp.svg" title="whatsapp" alt="error">
+                <img src="images/telegram.svg" title="telegram" alt="error">
+                <img src="images/email.svg" title="Gmail" alt="error">
+                <img src="images/instagram.svg" title="instagram" alt="error">
+                <img src="images/share-solid.svg" title="Share" alt="error">
+            </footer>
+        
+    </div>
+    <script>
+        var navOpen = 1;
+        function navClicked() {
+            navOpen = -1 * navOpen;
+            if(navOpen == 1){
+            document.getElementById("body2").style.marginLeft = "25%";
+            
+            document.getElementById("sidenav").style.width = "15%";
+            document.getElementById("elements").style.visibility = "visible";
+            document.getElementById("elements").style.display = "block";
+            }
+            else{
+                document.getElementById("body2").style.marginLeft = "0%";
+            document.getElementById("elements").style.visibility = "hidden";
+            document.getElementById("elments").style.display = "none";
+            }
+
+        }
+        var logo = document.getElementById("logo");
+        logo.addEventListener("animationend", function(){
+        var main = document.querySelector(".body1");
+        main.classList.add("canAnimate");
+        });
+    </script>
+</body>
+</html>

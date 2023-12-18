@@ -1,0 +1,226 @@
+body{
+    background-color: #0d181e;
+    font-family: sans-serif;
+}
+.body1{
+    opacity: 0;
+    position: absolute;
+    margin-top:1vw;
+    width: 100%;
+    padding: 1px;
+}
+#logo{
+    width: 100%;
+    color:#B4EBCA ;
+}
+#logo > img{
+    position: absolute;
+    z-index: 1;
+    left:50%;
+    transform: translate(-50%,-50%);
+    animation:logoimg 4s 1 ;
+    animation-fill-mode: forwards;
+}
+@keyframes logoimg {
+    0%{opacity: 0; width: 500px; top:70%}
+    60%{opacity: 100%; width: 500px; top:50%}
+    100%{opacity: 100%; width: 290px; top:100px}
+}
+#sidenav {
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;   
+    #elements{
+        visibility: hidden;
+        margin-top: 50px;
+    }          
+}
+#sidenav > img {
+    position: fixed;
+    z-index: 1;
+    padding-top: 1%;
+    top:20px;
+    width: 50px;
+    animation: dashes 4s 1;
+}
+#sidenav a {
+    padding: 0px 8px 30px 16px;
+    text-decoration: none;
+    font-size: 150%;
+    color:   #719F98;
+    display: flex;
+}
+@keyframes dashes{
+    0%{opacity:0}
+    60%{opacity:0}
+    100%{opacity:1}
+}
+
+@keyframes sidenavhover{
+    from{font-size:150%;}
+    to{font-size: 175%;}
+}
+@keyframes body1move {
+    0%{opacity: 0; top:50%}
+    100%{opacity:1; top:150px;}
+}
+#sidenav a:hover {
+    text-shadow: 0 0 10px   #719F98;
+    animation: sidenavhover 0.5s 1;
+    font-size: 175%;
+}
+#body2{
+    position: relative;
+    width:initial;
+    margin-top: 15%;
+    left: 10px;
+    h1{
+        color:#B4EBCA ;
+    }
+    h2{
+        color:#B4EBCA ;
+        font-family: cursive;
+    }
+}   
+.card{
+    background-color: #b4ebcab1;
+    color:#0d181e ;
+    margin: 8px;
+    margin-bottom: 14px;
+    position: relative;
+    width : 150px;
+    height : 180px;  
+    padding : 20px 15px;
+    line-height: 150%;
+    display : inline-block;
+    border-radius : 15px;
+    img{
+        border-radius: 15px;
+        position : relative;
+        top:-35px;
+        width : 150px;
+    }
+    h3{text-align: center;
+        position:inherit;
+        top:-30%;
+        display: flex;
+        
+    }
+}
+@keyframes cardhover{
+    from{scale:1}
+    to{scale:1.1}
+}
+.card:hover{
+    animation: cardhover 1s 1;
+    scale:1.1;
+}
+table{
+    width:600px;
+    font-size: 120%;
+    border: #b4ebca 2px solid;
+    border-radius: 5px;
+    padding: 3px;
+}
+.itemname{
+    border-bottom: #719F98 1px solid;
+    color: #B4EBCA;
+    background-color: #0d181e;
+    width:70%;
+    height: 50px;
+}
+.itemprice{
+    text-align: right;
+    color: #B4EBCA;
+    background-color: #0d181e;
+    height: 50px;
+}
+button{
+    background-color: #B4EBCA;
+    color: #0d181e;
+    border: #719F98 2px solid;
+    border-radius: 25px;
+    padding: 10px;
+    width:300px;
+    #Order{
+        color:#0d181e;
+    }
+}
+button:hover{
+    filter:drop-shadow(0 2px 3px #719F98);
+}
+#bday{
+    width:700px;
+    height:700px;
+    position:relative;
+    img{
+        position: absolute;
+        z-index: 1;
+        width:100%;
+        left:0;
+    }
+    h1{
+        position: absolute;
+        left:50%;
+        z-index: 2;
+        font-family: cursive;
+        color:#B4EBCA;
+        top:200px;
+        transform:translate(-50%,-50%);
+    }
+    p{
+        position: absolute;
+        padding:20px;
+        width:80%;
+        top: 300px;
+        left:50%;
+        font-size: 20px;
+        z-index: 2;
+        font-family: cursive;
+        color:#B4EBCA;
+        transform:translate(-50%,-50%);
+
+    }
+    #bdaybutton{
+        position: absolute;
+        left:50%;
+        top:500px;
+        padding:10px;
+        z-index: 2;
+        border:#B4EBCA 2px solid;
+        border-radius:25px;
+        font-size:15px;
+        transform:translate(-50%,-50%);
+
+    }
+    #bdaybutton:hover{
+        filter:drop-shadow(0px 2px 3px B4EBCA);
+    }
+}
+footer{
+    background-color: #719f9868;
+    padding:5px;
+    border-radius: 25px;
+    h4{
+        color:#B4EBCA;
+    }
+    p,a{
+        color:#0d181e;
+        font-size:20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    a:hover{
+        color: #B4EBCA;
+    }
+    img{
+        width:20px;
+        margin:20px;
+        display: inline-block;
+    }
+}
+.canAnimate{
+    animation: body1move 5s 1;
+    animation-fill-mode: forwards;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/webicon.png">
+
+    <title>HC Order</title>
+    <style>
+        body{
+            background-color: #0d181e;
+        }
+        #home{
+            position:absolute;
+            width:30px;
+            top:7px;
+            left:10px;
+        }
+        #home:hover{
+            filter: drop-shadow(0px 1px 1px #719F98);
+        }
+        #logo{
+          
+            color:#B4EBCA ;
+        }
+        #logo > img{  
+            width:250px;
+            position: absolute;
+            z-index: 1;
+            left:50%;
+            top:90px;
+            transform: translate(-50%,-50%);
+            animation: logomove 4s 1;
+        }
+        @keyframes logomove{
+            from{scale:0.5}
+            to{scale:1}
+        }
+        form{
+            padding:20px;
+            border-radius: 25px;
+            background-color: #b4ebcab1;
+            position:relative;
+            top:200px;
+            width:500px;
+            input{
+                width:450px;
+                margin-bottom: 30px;
+                border:#719F98 3px solid;
+                border-radius: 25px;
+                background-color: #0d181e;
+                color:#B4EBCA;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            input:hover{
+                border-color: #B4EBCA;
+            }
+            label{
+                color: #0d181e;
+                font-size: 20px;
+                font-family: cursive;
+            }
+            h2{
+                color: #0d181e;
+                font-family: sans-serif;
+            }
+            button{
+                color: #0d181e;
+                border-radius: 25px;
+                background-color: #719F98;
+            }
+        }
+    </style>
+</head>
+<body>
+</body>
+    <a href="HanCook.html"><img src="images/house-solid.svg" id="home" alt="error"></a>
+    <div id="logo">
+        <img src="images/logo.png" alt="error">
+    </div>
+    <center><form>
+        <h2>Place Your Order</h2>
+        <label for="dish">My order</label>
+        <input type="text" name="dish">
+        <label for="location">Location</label>
+        <input type="text" name="location">
+        <label for="payment">Payment</label>
+        <input type="text" name="payment">
+        <label for="comments">Comments</label>
+        <input type="text" name="comments">
+        <button type="submit">Order</button>
+        <h2>Enjoy Your Meal!</h2>
+    </form></center>
+</body>
+</html>
