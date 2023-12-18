@@ -10,7 +10,6 @@ body{
     padding: 1px;
 }
 #logo{
-    width: 100%;
     color:#B4EBCA ;
 }
 #logo > img{
@@ -23,7 +22,7 @@ body{
 }
 @keyframes logoimg {
     0%{opacity: 0; width: 500px; top:70%}
-    60%{opacity: 100%; width: 500px; top:50%}
+    60%{opacity: 100%; width: 500px; top:350px}
     100%{opacity: 100%; width: 290px; top:100px}
 }
 #sidenav {
