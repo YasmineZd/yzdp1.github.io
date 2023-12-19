@@ -12,6 +12,7 @@ body{
 }
 #logo{
     min-width: 700px;
+    margin-left: 3vw;
     color:#B4EBCA ;
 }
 #logo > img{
