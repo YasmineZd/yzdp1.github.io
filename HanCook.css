@@ -16,7 +16,7 @@ body{
 #logo > img{
     position: absolute;
     z-index: 1;
-    left: 700px;
+    left: 50%;
     transform: translate(-50%, -50%);
     animation:logoimg 4s 1 ;
     animation-fill-mode: forwards;
