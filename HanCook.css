@@ -6,7 +6,7 @@ body{
     opacity: 0;
     position: absolute;
     margin-top:1vw;
-    width: 1500px;
+    width: 100vw;
     padding: 1px;
 }
 #logo{
