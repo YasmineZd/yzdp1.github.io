@@ -3,31 +3,33 @@ body{
     font-family: sans-serif;
 }
 .body1{
+    position: relative;
     opacity: 0;
-    position: absolute;
     margin-top:1vw;
     width: 100%;
     padding: 1px;
-    min-width: 700px;
 }
 #logo{
-    min-width: 700px;
-    margin-left: 3vw;
-    color:#B4EBCA ;
-}
-#logo > img{
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top:100%;
+    opacity: 0;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color:#B4EBCA;
     animation:logoimg 4s 1 ;
     animation-fill-mode: forwards;
 }
-@keyframes logoimg {
-    0%{opacity: 0; width: 500px; top:70%}
-    60%{opacity: 100%; width: 500px; top:350px}
-    100%{opacity: 100%; width: 290px; top:100px}
+#logo > img{
+    position: inherit;
+    width:100%;
 }
+@keyframes logoimg {
+    0%{opacity: 0; width: 45%; top:100%; transform: translateY(100%);}
+    60%{opacity: 100%; width: 45%; transform: translateY(50%);}
+    100%{opacity: 100%; width: 25%; transform: translateY(0%);}
+}
+
 #sidenav {
     position: fixed;
     z-index: 1;
@@ -63,8 +65,8 @@ body{
     to{font-size: 175%;}
 }
 @keyframes body1move {
-    0%{opacity: 0; top:50%}
-    100%{opacity:1; top:150px;}
+    0%{opacity: 0;}
+    100%{opacity:1;}
 }
 #sidenav a:hover {
     text-shadow: 0 0 10px   #719F98;
@@ -118,7 +120,8 @@ body{
     scale:1.1;
 }
 table{
-    width:600px;
+    width:80%;
+    max-width: 600px;
     font-size: 120%;
     border: #b4ebca 2px solid;
     border-radius: 5px;
@@ -142,8 +145,9 @@ button{
     color: #0d181e;
     border: #719F98 2px solid;
     border-radius: 25px;
-    padding: 10px;
-    width:300px;
+    padding: 3%px;
+    width:30%;
+    max-width:300px;
     #Order{
         color:#0d181e;
     }
@@ -152,47 +156,44 @@ button:hover{
     filter:drop-shadow(0 2px 3px #719F98);
 }
 #bday{
-    width:700px;
-    height:700px;
+    width:100%;
+    height:100%;
+    max-width: 700px;
     position:relative;
     img{
-        position: absolute;
+        position: initial;
         z-index: 1;
         width:100%;
         left:0;
     }
     h1{
-        position: absolute;
+        position: initial;
+        margin-top: -80%;
         left:50%;
         z-index: 2;
         font-family: cursive;
         color:#B4EBCA;
-        top:200px;
-        transform:translate(-50%,-50%);
     }
     p{
-        position: absolute;
+        position: initial;
         padding:20px;
         width:80%;
-        top: 300px;
         left:50%;
         font-size: 20px;
         z-index: 2;
         font-family: cursive;
         color:#B4EBCA;
-        transform:translate(-50%,-50%);
 
     }
     #bdaybutton{
-        position: absolute;
+        position: initial;
         left:50%;
-        top:500px;
-        padding:10px;
+        padding:3%;
         z-index: 2;
         border:#B4EBCA 2px solid;
         border-radius:25px;
-        font-size:15px;
-        transform:translate(-50%,-50%);
+        font-size:100%;
+        width:30%;
 
     }
     #bdaybutton:hover{
@@ -200,6 +201,8 @@ button:hover{
     }
 }
 footer{
+    position: relative;
+    margin-top: 40%;
     background-color: #719f9868;
     padding:5px;
     border-radius: 25px;
