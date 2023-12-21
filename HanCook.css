@@ -26,7 +26,7 @@ body{
 }
 @keyframes logoimg {
     0%{opacity: 0; width: 45%; top:100%; transform: translateY(100%);}
-    60%{opacity: 100%; width: 45%; transform: translateY(50%);}
+    60%{opacity: 100%; width: 45%; transform: translateY(20%);}
     100%{opacity: 100%; width: 25%; transform: translateY(0%);}
 }
 
